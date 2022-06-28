@@ -84,6 +84,6 @@
 }
 #submit:hover {
     box-shadow: 0 6px 20px -5px rgba(0,0,0,2.4);
-    curser: pointer;
+    /*curser: pointer;*/
     transition: .1s;
 }
