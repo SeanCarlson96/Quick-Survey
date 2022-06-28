@@ -1,0 +1,63 @@
+<html>
+<main id="main">
+
+    <h1 id="title">Quick Survey!</h1>
+    <p id="description">Please complete this 30 second survey</p>
+
+  <form id="survey-form" onsubmit="return form_submission()">
+
+    <section id="group">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Name" required><br>
+      <label id="email-label" foe="Email">Email</label>
+      <input id="email" type="email" placeholder="Email" required><br>
+      <label id="number-label" for="age">Age</label>
+      <input id="number" type="number" placeholder="Age" required min="1" max="120">
+    </section>
+
+    <section id="group">
+      <label for="sport">What is your favorite sport?</label><br>
+      <select id="dropdown" name="sport">
+        <option value="-">-</option>
+        <option value="football">Football</option>
+        <option value="basketball">Basketball</option>
+        <option value="baseball">Baseball</option>
+        <option value="Hockey">Hockey</option>
+        <option value="Soccer">Soccer</option>
+        <option value="Other">Other</option>
+        <option value="none">I don't like sports</option>
+      </select>
+    </section>
+
+    <section id="group">
+      <label>Are you a sports fan?</label><br>
+      <label for="yes">
+        <input id="yes" value="yes" type="radio" name="fan">Yes
+      </label>
+      <label for="no">
+        <input id="no" value="no" type="radio" name="fan">No
+      </label>
+    </section>
+
+    <section id="group">
+      <label>What do you like about sports? (check all that apply)</label><br>
+      <label for="fun">
+        <input id="fun" value="fun" type="checkbox" name="likes">They are fun!
+      </label><br>
+      <label for="competition">
+        <input id="competition" value="competition" type="checkbox" name="likes">The competition!</label><br>
+      <label for="nothing">
+        <input id="nothing" value="nothing" type="checkbox" name="likes">Nothing!
+      </label>
+    </section>
+
+    <section id="group">
+      <label>Please add any additional comments below, and then click submit!</label><br>
+      <textarea id="text" name="text" placeholder="Comments"></textarea><br>
+      <input id="submit" type="submit">
+    </section>
+    
+  </form>
+
+</main>
+</html>
