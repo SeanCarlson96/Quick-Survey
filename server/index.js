@@ -1,6 +1,6 @@
 const express = require("express");
 
-const PORT = process.env.PORT || 3001;
+//const PORT = process.env.PORT || 3001;
 
 const app = express();
 
@@ -8,7 +8,7 @@ const app = express();
 var port = process.env.PORT || 3000,
     http = require('http'),
     fs = require('fs'),
-    html = fs.readFileSync('index.html');
+    html = fs.readFileSync('/public/index.html');
 
 var log = function(entry) {
     fs.appendFileSync('/tmp/sample-app.log', new Date().toISOString() + ' - ' + entry + '\n');
@@ -46,11 +46,11 @@ server.listen(port);
 console.log('Server running at http://127.0.0.1:' + port + '/');
 
 /////
-
+/*
 app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!" });
   });
   
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
-  });
+  });*/
