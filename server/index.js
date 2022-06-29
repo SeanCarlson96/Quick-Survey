@@ -1,10 +1,20 @@
+/*
 const express = require("express");
 
-//const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-//added randomly
+app.get("/api", (req, res) => {
+    res.json({ message: "Hello from server!" });
+  });
+  
+app.listen(PORT, () => {
+    console.log(`Server listening on ${PORT}`);
+  });*/
+
+
+//added randomly from amazon
 var port = process.env.PORT || 3000,
     http = require('http'),
     fs = require('fs'),
@@ -46,11 +56,3 @@ server.listen(port);
 console.log('Server running at http://127.0.0.1:' + port + '/');
 
 /////
-/*
-app.get("/api", (req, res) => {
-    res.json({ message: "Hello from server!" });
-  });
-  
-app.listen(PORT, () => {
-    console.log(`Server listening on ${PORT}`);
-  });*/
