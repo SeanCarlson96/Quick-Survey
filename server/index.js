@@ -35,7 +35,7 @@ app.get('*', (req, res) => {
 
 app.post("/", function(req, res) {
   let newSurveyResponse = new SurveyResponse({
-    name: "req.body.name"
+    name: req.body.name
     /*email: req.body.email,
     age: req.body.age,
     hours: req.body.hours,
@@ -44,7 +44,7 @@ app.post("/", function(req, res) {
     comments: req.body.comments*/
   });
   newSurveyResponse.save();
-  res.redirect('/');
+  //res.redirect('/');
 })
 
 
