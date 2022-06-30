@@ -44,7 +44,7 @@ app.post("/", function(req, res) {
     comments: req.body.comments
   });
   newSurveyResponse.save();
-  res.redirect('/');
+  //res.redirect('/');
 })
 
 app.listen(PORT, () => {
