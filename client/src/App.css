@@ -40,7 +40,7 @@ select {
 }
 textarea {
   width: 50%;
-  height: 150px;
+  height: 100px;
   padding: 12px 20px;
   
   border: 2px solid #ccc;
