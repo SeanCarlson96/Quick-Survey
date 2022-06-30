@@ -45,6 +45,7 @@ app.post("/", function(req, res) {
   });
   newSurveyResponse.save();
   res.redirect('/');
+  alert('Submission successful! Thank you');
 })
 
 app.listen(PORT, () => {
