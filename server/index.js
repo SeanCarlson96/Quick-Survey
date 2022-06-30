@@ -33,18 +33,18 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
-app.post("/", function(req, res) {
+app.post("/api", function(req, res) {
   let newSurveyResponse = new SurveyResponse({
-    name: req.body.name
-    /*email: req.body.email,
+    name: req.body.name,
+    email: req.body.email,
     age: req.body.age,
     hours: req.body.hours,
     adInfluence: req.body.adInfluence,
     channels: req.body.channels,
-    comments: req.body.comments*/
+    comments: req.body.comments
   });
   newSurveyResponse.save();
-  //res.redirect('/');
+  res.redirect('/');
 })
 
 
