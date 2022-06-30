@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 mongoose.connect("mongodb+srv://QSuser:QSpass@quicksurveycluster.o321mlo.mongodb.net/qsDB", {useNewUrlParser: true}, {useUnifiedTopology: true});
 
@@ -31,6 +31,13 @@ app.get("/api", (req, res) => {
   });
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+});
+
+app.get('/', function(req, res){
+  res.render('form');// if jade
+  // You should use one of line depending on type of frontend you are with
+  //res.sendFile(__dirname + '/form.html'); //if html file is root directory
+ res.sendFile("index.html"); //if html file is within public directory
 });
 
 app.post("/", function(req, res) {
