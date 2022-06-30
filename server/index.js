@@ -31,14 +31,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
-app.get('/', function(req, res){
-  res.render('form');// if jade
-  // You should use one of line depending on type of frontend you are with
-  //res.sendFile(__dirname + '/form.html'); //if html file is root directory
- res.sendFile("index.html"); //if html file is within public directory
-});
-
-app.post("/", function(req, res) {
+app.get("/", function(req, res) {
   let newSurveyResponse = new SurveyResponse({
     name: req.body.name,
     email: req.body.email,
@@ -51,8 +44,6 @@ app.post("/", function(req, res) {
   newSurveyResponse.save();
   res.redirect('/');
 })
-
-
 
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
