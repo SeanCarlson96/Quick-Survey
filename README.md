@@ -54,7 +54,7 @@ Site Features:
 <div display="flex">
   <img src="README.screenshots/QSSS1.png" alt="" height="500">
   <img src="README.screenshots/QSSS2.png" alt="" height="500">
-  <img src="README.screenshots/QSSSempty.png" alt="" height="500">
+  <img src="README.screenshots/QSSSempty.png" alt="">
   <img src="README.screenshots/QSSSemail.png" alt="">
   <img src="README.screenshots/QSSSdb.png" alt="">
 </div>
