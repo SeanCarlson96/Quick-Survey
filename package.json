@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/SeanCarlson96/Quick-Survey#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "express": "^4.18.1"
   },
   "engines": {

@@ -8,6 +8,7 @@
     <meta name="description" content="Web site created using create-react-app" />
     <!--<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
     <title>Quick Survey</title>
     <script>{function form_submission(){alert('Submission successful! Thank you');return false;}}</script>
   </head>
@@ -19,7 +20,7 @@
     <form id="survey-form" onsubmit="return form_submission()">
       <section id="group">
         <label id="name-label" for="name">Name</label>
-        <input id="name" type="text" placeholder="Name" required><br>
+        <input class="form-control" id="name" type="text" placeholder="Name" required><br>
         <label id="email-label" foe="Email">Email</label>
         <input id="email" type="email" placeholder="Email" required><br>
         <label id="number-label" for="age">Age</label>
