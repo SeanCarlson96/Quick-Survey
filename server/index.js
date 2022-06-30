@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 
 mongoose.connect("mongodb+srv://QSuser:QSpass@quicksurveycluster.o321mlo.mongodb.net/qsDB", {useNewUrlParser: true}, {useUnifiedTopology: true});
 
