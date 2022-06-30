@@ -1,3 +1,6 @@
+*{
+  background-color: antiquewhite;
+}
 #main {
   font-size: 23px;
   font-family: Roboto, Arial, Helvetica, serif;
@@ -12,7 +15,7 @@
   line-height: .1;
 }
 #description {
-  color: blue;
+  color: #00A36C;
 }
 #survey-form {
   align-items: center;
