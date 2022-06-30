@@ -25,28 +25,22 @@
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
-  
   border: 1px solid #ccc;
   border-radius: 4px;
-
 }
 select {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
-  
   border: 1px solid #ccc;
   border-radius: 4px;
-  
 }
 textarea {
   width: 50%;
   height: 100px;
   padding: 12px 20px;
-  
   border: 2px solid #ccc;
   border-radius: 4px;
-  
   resize: none;
 }
 #group{
@@ -69,11 +63,9 @@ textarea {
     height: 40px;
     font-size: 19px;
     border-radius: 10px;
-    
     cursor: pointer;
 }
 #submit:hover {
     box-shadow: 0 6px 20px -5px rgba(0,0,0,2.4);
-    /*curser: pointer;*/
     transition: .1s;
 }
