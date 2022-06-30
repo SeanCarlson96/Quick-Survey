@@ -14,7 +14,7 @@ const surveyResponseSchema = {
   age: Number,
   hours: String,
   adInfluence: String,
-  channels: String,
+  channels: Array,
   comments: String
 }
 
